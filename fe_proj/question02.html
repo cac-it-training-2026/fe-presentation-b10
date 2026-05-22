@@ -7,20 +7,30 @@
     </head>
     <body>
         <div class="quiz-container">
-            <h3 class="quiz-question">問題3: 鍵の安全な配布が「容易」かつ、暗号化・復号の相対的な処理速度が「遅い」暗号化方式はどれですか。</h3>
+            <h3 class="quiz-question">問題2: 公開鍵暗号方式を用いて、図のようにAからBへ、他人に秘密にしておきたい文書を送るとき、暗号化に用いる鍵Kとして、適切なものはどれか。</h3>
 
+			<h4 class="quiz-irust">
+				<div style="text-align:center;">
+				<img src="images/Question-1.jpg" style="width: 400px;height: auto;">
+				</div>
+				
+			
             <form class="quiz-options">
                 <label>
-                    <input type="radio" name="q1" value="1" /> 1. 共通鍵暗号方式
+                    <input type="radio" name="q1" value="1" /> 1. Aの公開鍵
+                    
                 </label>
                 <label>
-                    <input type="radio" name="q1" value="2" /> 2. 公開鍵暗号方式
+                    <input type="radio" name="q1" value="2" /> 2. Aの秘密鍵
+                   
                 </label>
                 <label>
-                    <input type="radio" name="q1" value="3" /> 3. 秘密鍵暗号方式
+                    <input type="radio" name="q1" value="3" /> 3. Bの公開鍵
+                    
                 </label>
                 <label>
-                    <input type="radio" name="q1" value="4" /> 4. どれでもない
+                    <input type="radio" name="q1" value="4" /> 4. 共通の秘密鍵
+                    
                 </label>
             </form>
 
@@ -28,14 +38,28 @@
                 <summary>解答と解説を見る</summary>
                 <div class="answer-content">
                     <p class="correct-answer">
-                        <strong>正解：2. 公開鍵暗号方式</strong>
+                        <strong>正解：3. Bの公開鍵</strong>
                     </p>
                     <p class="explanation">
                         <strong>解説：</strong><br />
-                        文章を復号するのに必要な秘密鍵は本人だけが持ち、公開鍵は秘密にする必要がないため安全に配布することができます。また、暗号化や復号の処理が複雑な数学的演算を伴うため、共通鍵暗号方式と比較すると処理速度が遅い傾向があります。
-                    </p>
-                                   
+                        公開鍵暗号方式による暗号化通信では、送信者は受信者の<span style="color:#ff0000;">公開鍵</span>で暗号化した文書を送信し、
+                        受信者は自身の<span style="color:#ff0000;">秘密鍵</span>で複合を行います。
+                    </p>    <p>問題において受信者がBとなるため、AはBの<span style="color:#ff0000;">公開鍵</span>で暗号化を行い
+                        Bが自身のの<span style="color:#ff0000;">秘密鍵</span>で複合を行うことができる
+                        </p>
+                        <p>したがって暗号化に必要になるものは「Bの公開鍵」となる。
+                        </p>
+                        
+                    
                 </div>
+                 <ul>
+					<li>
+						<a href="question02.html">
+							次の問題へ
+							</a>
+							</li>
+							</ul>
+
             </details>
         </div>
     </body>
