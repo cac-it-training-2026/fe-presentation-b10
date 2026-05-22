@@ -202,4 +202,75 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+    
 }
+.button004 {
+    margin-top: 30px;
+}
+
+.button004 a {
+    background: linear-gradient(
+        135deg,
+        #8b5cf6,
+        #d946ef
+    );
+
+    border-radius: 50px;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin: 0 auto;
+
+    max-width: 260px;
+
+    padding: 14px 25px;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 8px 20px rgba(139,92,246,0.3);
+}
+
+.button004 a:after {
+    position: absolute;
+
+    top: 50%;
+
+    right: 20px;
+
+    content: "➜";
+
+    transform: translateY(-50%);
+
+    transition: 0.3s;
+}
+
+.button004 a:hover {
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #c026d3
+    );
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 30px rgba(139,92,246,0.5);
+}
+
+.button004 a:hover:after {
+    right: 15px;
+}
+
